@@ -2,10 +2,10 @@
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkToggleAction" id="PlayPause">
-    <property name="label" translatable="yes">Play</property>
-    <property name="short_label" translatable="yes">Play</property>
+    <property name="label" translatable="yes">Pause</property>
+    <property name="short_label" translatable="yes">Pause</property>
     <property name="tooltip" translatable="yes">Play or resume current listening</property>
-    <property name="icon_name">media-playback-start-symbolic</property>
+    <property name="icon_name">media-playback-pause-symbolic</property>
     <property name="is_important">True</property>
     <signal name="toggled" handler="platine_main_window_on_play_pause" swapped="no"/>
   </object>
@@ -63,7 +63,6 @@
                 <property name="can_focus">False</property>
                 <property name="tooltip_text" translatable="yes">Resume or pause the current listening</property>
                 <property name="related_action">PlayPause</property>
-                <property name="label" translatable="yes">toolbutton1</property>
                 <property name="use_underline">True</property>
               </object>
               <packing>
@@ -75,6 +74,8 @@
               <object class="GtkToolItem" id="play_scale">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_left">6</property>
+                <property name="margin_right">6</property>
                 <property name="use_action_appearance">False</property>
                 <child>
                   <object class="GtkScale" id="scale1">
