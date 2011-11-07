@@ -1,0 +1,9 @@
+*.c
+*.o
+*~
+*/Makefile
+*/Makefile.in
+platine
+*stamp*
+depcomp
+install-sh

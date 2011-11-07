@@ -1,0 +1,16 @@
+===========
+| Platine  |
+===========
+
+Platine is a simple record player.
+
+======================
+| Build instructions |
+======================
+In the root directory, run:
+autoreconf -i
+Then it's the old ./configure; make; make install routine.
+
+The program depends on:
+- gtk+-3.0
+TODO
